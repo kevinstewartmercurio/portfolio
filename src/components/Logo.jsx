@@ -5,7 +5,7 @@ export function Logo() {
         <div>
             <Link 
                 href="/" 
-                className="w-max text-5xl font-['Poppins'] font-semibold"
+                className="w-max text-5xl font-['Poppins'] font-semibold duration-300 hover:text-[#703f01]"
             >
                 ksm
             </Link>

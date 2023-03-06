@@ -12,10 +12,10 @@ export function Header() {
     return (
         <>
             <div className="text-[#cac9c9] bg-[#6b7c66] h-20 flex items-center">
-                <div className="w-1/2 px-[4%]">
+                <div className="w-1/2 px-[3%]">
                     <Logo/>
                 </div>
-                <div className="w-1/2 px-[4%] flex items-center justify-end">
+                <div className="w-1/2 px-[3%] flex items-center justify-end">
                     {links.map((el, idx) => {
                         return (
                             <Link 
