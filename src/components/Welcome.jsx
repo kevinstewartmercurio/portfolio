@@ -37,7 +37,7 @@ export function Welcome() {
                         and I'm ready to work with you.
                     </span>
                 </div>
-                <div className="mt-4 pl-[48%] sm:pl-[64%] md:pl-[56%] lg:pl-[36%]">
+                <div className="mt-4 pl-[48%] sm:pl-[64%] md:pl-[56%] lg:pl-[42%]">
                     {buttons.map((el, idx) => {
                         return (
                             <button
