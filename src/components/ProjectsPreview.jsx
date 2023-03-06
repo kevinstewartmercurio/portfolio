@@ -3,7 +3,6 @@ import Image from "next/image"
 
 import youdosudoku from "../../public/youdosudoku.png"
 import enigmachat from "../../public/enigmachat.png"
-import beehive from "../../public/beehive.png"
 import rpdocs from "../../public/rpdocs.png"
 
 const projects = [
