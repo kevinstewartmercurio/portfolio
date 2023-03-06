@@ -38,7 +38,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
                         href={live}
                         target="_blank"
                         rel="noreferrer"
-                        className="live-btn bg-[#688761] border-solid border-2 border-[#ffffff] rounded-lg mx-1 px-2.5 py-1 font-['Inter'] text-xs font-light"
+                        className="live-btn bg-[#688761] border-solid border-2 border-[#ffffff] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light"
                     >
                         view live
                     </Link>
@@ -59,7 +59,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
                         href={repo}
                         target="_blank"
                         rel="noreferrer"
-                        className="repo-btn bg-[#353535] border-solid border-2 border-[#353535] rounded-lg mx-1 px-2.5 py-1 font-['Inter'] text-xs font-light"
+                        className="repo-btn bg-[#353535] border-solid border-2 border-[#353535] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light"
                     >
                         repository
                     </Link>
@@ -68,11 +68,10 @@ function ProjectCard({ title, image, desc, live, repo }) {
         }
     }
 
-
     return (
         <>
-            <div className="text-[#ffffff] bg-[#688761] my-2 px-2 pt-1.5 pb-2.5 rounded-xl text-center duration-300 hover:scale-[1.025]">
-                <p className="font-['Poppins'] text-lg">
+            <div className="text-[#ffffff] bg-[#688761] max-w-[360px] h-full sm:mx-2 my-2 px-2 pt-1.5 pb-2.5 rounded-xl text-center duration-300 hover:scale-[1.025]">
+                <p className="font-['Poppins'] text-lg md:text-xl">
                     {title}
                 </p>
                 <Image
@@ -80,7 +79,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
                     alt="project image"
                     className="my-1.5 rounded-xl"
                 />
-                <p className="mt-1.5 mb-3 font-['Inter'] text-xs">
+                <p className="mt-1.5 mb-3 font-['Inter'] text-xs md:text-sm">
                     {desc}
                 </p>
                 {liveBtn()}
@@ -93,29 +92,42 @@ function ProjectCard({ title, image, desc, live, repo }) {
 export function ProjectsPreview() {
     return (
         <>
-            <div className="border-solid border-2 border-red-300 box-border text-[#cac9c9] bg-[#212f1d] w-full h-[192px] xxs:h-[172px] pl-4 md:pl-12 lg:pl-20 pr-3 md:pr-8 lg:pr-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center absolute z-10">
+            <div className="text-[#cac9c9] bg-[#212f1d] w-full h-[192px] xxs:h-[172px] pl-4 md:pl-12 lg:pl-20 pr-3 md:pr-8 lg:pr-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center absolute z-10">
                 <h1 className="w-max font-['Poppins'] text-5xl md:text-7xl lg:text-8xl font-bold">
                     projects
                 </h1>
                 <p className="mt-4 sm:mt-0 pl-6 font-['Inter'] text-sm md:text-base lg:text-xl font-light">
-                    All of my projects can be found on my Github but here are 
+                    All of my projects can be found on my&nbsp; 
+                    <span>
+                        <Link
+                            href="https://github.com/kstewartmercurio"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[#965b0f] hover:underline"
+                        >
+                            Github&nbsp;
+                        </Link>
+                    </span> 
+                    but here are 
                     some of the projects that I've been working on recently.
                 </p>
             </div>
             <div className="bg-[url(/waves-haikei.png)] bg-no-repeat w-full h-[128px] mt-[136px] xxs:mt-[116px] xs:mt-[126px] xl:mt-[164px] absolute"></div>
-            <div className="border-solid border-2 border-blue-300 box-border bg-[#703f01] w-full h-max mt-[240px] xxs:mt-[220px] xs:mt-[254px] xl:mt-[292px] px-3 pt-3 pb-8 flex flex-col absolute z-10">
-                {projects.map((el, idx) => {
-                    return (
-                        <ProjectCard
-                            key={idx}
-                            title={el.title}
-                            image={el.image}
-                            desc={el.desc}
-                            live={el.live || null}
-                            repo={el.repo || null}
-                        />
-                    )
-                })}
+            <div className="bg-[#703f01] w-full h-max sm:h-[388px] md:h-[432px] mt-[240px] xxs:mt-[220px] xs:mt-[254px] xl:mt-[292px] px-3 pt-6 pb-4 absolute z-10">
+                <div className="h-full flex flex-col sm:flex-row items-center sm:justify-center">
+                    {projects.map((el, idx) => {
+                        return (
+                            <ProjectCard
+                                key={idx}
+                                title={el.title}
+                                image={el.image}
+                                desc={el.desc}
+                                live={el.live || null}
+                                repo={el.repo || null}
+                            />
+                        )
+                    })}
+                </div>
             </div>
         </>
     )
