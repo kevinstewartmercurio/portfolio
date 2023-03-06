@@ -9,15 +9,20 @@ link orange #965b0f
 @tailwind components;
 @tailwind utilities;
 
+html {
+    overflow: auto;
+    overscroll-behavior: none;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 #resume-btn:hover {
