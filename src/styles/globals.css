@@ -58,3 +58,15 @@ body {
         display: none;
     }
 }
+
+.live-btn {
+    box-shadow: inset 0 0 0 0 #ffffff;
+    -webkit-transition: ease-out 0.45s;
+    -moz-transition: ease-out 0.45s;
+    transition: 0.45s;
+}
+
+.live-btn:hover {
+    color: #2f3e29;
+    box-shadow: inset 400px 0 0 0 #ffffff;
+}
