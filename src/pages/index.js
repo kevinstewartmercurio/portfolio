@@ -29,19 +29,19 @@ export default function Home() {
         <>  
             <Header handleNavClick={handleNavClick}/>
             <Welcome />
-            {/* <div className="border-solid border-4 border-black box-border w-full"></div> */}
+            {/* <div className="border-solid border-4 border-black box-border z-30"></div> */}
             <div ref={aboutRef}>
                 <Bio />
             </div>
-            {/* <div className="border-solid border-4 border-black box-border w-full"></div> */}
+            {/* <div className="border-solid border-4 border-black box-border z-30"></div> */}
             <div ref={projectsRef}>
                 <ProjectsPreview />
             </div>
-            {/* <div className="border-solid border-4 border-black box-border w-full"></div> */}
+            {/* <div className="border-solid border-4 border-black box-border z-30"></div> */}
             <div ref={contactRef}>
                 <Contact/>
             </div>
-            {/* <div className="border-solid border-4 border-black box-border w-full"></div> */}
+            {/* <div className="border-solid border-4 border-black box-border z-30"></div> */}
             <Footer />
         </>
     );
