@@ -1,4 +1,4 @@
-[kevinstewartmercurio.com](https://www.kevinstewartmercurio.com/)
+# [kevinstewartmercurio.com](https://www.kevinstewartmercurio.com/)
 
 <img src="./public/portfolio.png" alt="https://www.kevinstewartmercurio.com/ screenshot"/>
 
