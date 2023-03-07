@@ -112,7 +112,7 @@ export function ProjectsPreview() {
                         some of the projects that I've been working on recently.
                     </p>
                 </div>
-                <div className="bg-[url(/waves-haikei.png)] bg-no-repeat w-full h-[128px] mt-[136px] xxs:mt-[116px] xs:mt-[126px] xl:mt-[164px] absolute"></div>
+                <div className="bg-[url(/waves-projects-haikei.png)] bg-no-repeat w-full h-[128px] mt-[136px] xxs:mt-[116px] xs:mt-[126px] xl:mt-[164px] absolute"></div>
                 <div className="bg-[#703f01] w-full h-[1136px] sm:h-[388px] md:h-[432px] mt-[240px] xxs:mt-[220px] xs:mt-[254px] xl:mt-[292px] px-3 pt-6 pb-4 absolute z-10">
                     <div className="h-full flex flex-col sm:flex-row items-center sm:justify-center">
                         {projects.map((el, idx) => {

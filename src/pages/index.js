@@ -5,6 +5,7 @@ import { Welcome } from "@/components/Welcome"
 import { Bio } from "@/components/Bio"
 import { ProjectsPreview } from "@/components/ProjectsPreview"
 import { Contact } from "@/components/Contact"
+import { Footer } from "@/components/Footer"
 
 export default function Home() {
     const aboutRef = useRef()
@@ -40,6 +41,8 @@ export default function Home() {
             <div ref={contactRef}>
                 <Contact/>
             </div>
+            {/* <div className="border-solid border-4 border-black box-border w-full"></div> */}
+            <Footer />
         </>
     );
 }

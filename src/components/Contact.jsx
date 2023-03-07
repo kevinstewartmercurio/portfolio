@@ -3,7 +3,7 @@ import { Form } from "@/components/Form"
 export function Contact() {
     return (
         <>
-            <div className="bg-[#703f01] w-full h-max pt-32 pb-32 flex flex-col md:flex-row-reverse">
+            <div className="bg-[#703f01] w-full h-max pt-32 flex flex-col md:flex-row-reverse">
                 <div className="text-[#cac9c9] md:w-1/2 pl-4 md:pl-0 pr-3 md:pr-10 lg:pr-20 my-auto pt-7 md:pt-0 pb-4 md:pb-20">
                     <h1 className="font-['Poppins'] text-5xl md:text-7xl lg:text-8xl font-bold">
                         contact me
