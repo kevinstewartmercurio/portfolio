@@ -15,7 +15,7 @@ export function Welcome() {
     return (
         <>
             <div>
-                <div className="bg-[#6b7c66] h-[360px] md:h-[470px] lg:h-[580px] pl-[8%] md:pl-[10%] lg:pl-[14%] pr-[2%] pt-[12%] sm:pt-[10%] md:pt-[12%] lg:pt-[8%]">
+                <div className="bg-[#6b7c66] h-[360px] md:h-[470px] lg:h-[580px] pl-[8%] 2xl:pl-[16%] md:pl-[10%] lg:pl-[14%] pr-[2%] pt-[12%] sm:pt-[10%] md:pt-[12%] lg:pt-[8%]">
                     <h2 className="text-[#cac9c9] font-['Inter'] text-4xl md:text-5xl lg:text-7xl leading-[42px] md:leading-[64px] lg:leading-[84px]">
                         Hi, my name is
                     </h2>
@@ -55,7 +55,8 @@ export function Welcome() {
                         })}
                     </div>
                 </div>
-                <div className="bg-[url(/layered-peaks-haikei.png)] bg-cover bg-no-repeat h-[320px] rotate-180"></div>
+                {/* <div className="peaks bg-[url(/layered-peaks-haikei.png)] bg-cover bg-no-repeat h-[320px] rotate-180"></div> */}
+                <div className="peaks bg-[url(/layered-peaks-haikei.png)] bg-cover bg-no-repeat h-[352px]"></div>
             </div>
         </>
     )
