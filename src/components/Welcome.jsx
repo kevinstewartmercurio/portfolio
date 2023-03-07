@@ -55,7 +55,6 @@ export function Welcome() {
                         })}
                     </div>
                 </div>
-                {/* <div className="peaks bg-[url(/layered-peaks-haikei.png)] bg-cover bg-no-repeat h-[320px] rotate-180"></div> */}
                 <div className="peaks bg-[url(/layered-peaks-haikei.png)] bg-cover bg-no-repeat h-[352px]"></div>
             </div>
         </>
