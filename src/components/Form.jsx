@@ -21,34 +21,48 @@ export function Form() {
                 ref={form} 
                 onSubmit={sendEmail}
                 autoComplete="off"
-                className="text-[#cac9c9] mt-2 px-4 flex flex-col"
+                className="text-[#cac9c9] w-full mt-2 px-4 flex flex-col"
             >
-                <label className="pl-1.5 font-['Poppins'] text-sm">
+                <label className="w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] mx-auto pl-2 font-['Poppins'] text-sm md:text-base lg:text-lg">
                     Name
                 </label>
                 <input 
                     type="text" 
-                    name="name" 
-                    className="bg-[#676666] mb-3 rounded-lg focus-visible:outline-none"
+                    name="name"
+                    required 
+                    className="bg-[#676666] w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] mx-auto mb-1 pl-2 rounded-lg text-sm md:text-base lg:text-lg focus-visible:outline-none"
                 />
-                <label className="pl-1.5 font-['Poppins'] text-sm">
+                <label className="w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] mx-auto pl-2 font-['Poppins'] text-sm md:text-base lg:text-lg">
                     Email
                 </label>
                 <input 
                     type="email" 
-                    name="email" 
-                    className="bg-[#676666] mb-3 rounded-lg focus-visible:outline-none"
+                    name="email"
+                    required 
+                    className="bg-[#676666] w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] mx-auto mb-1 pl-2 rounded-lg text-sm md:text-base lg:text-lg focus-visible:outline-none"
                 />
-                <label className="pl-1.5 font-['Poppins'] text-sm">
+                <label className="w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] mx-auto pl-2 font-['Poppins'] text-sm md:text-base lg:text-lg">
+                    Subject
+                </label>
+                <input
+                    type="text" 
+                    name="subject"
+                    required 
+                    className="bg-[#676666] w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] mx-auto mb-1 pl-2 rounded-lg text-sm md:text-base lg:text-lg focus-visible:outline-none"
+                    
+                />
+                <label className="w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] mx-auto pl-2 font-['Poppins'] text-sm md:text-base lg:text-lg">
                     Message
                 </label>
                 <textarea 
-                    name="message" 
-                    className="bg-[#676666] rounded-lg focus-visible:outline-none"
+                    name="message"
+                    required
+                    className="bg-[#676666] w-[282px] xxs:w-[337px] xs:w-[387px] md:w-[85%] h-32 md:h-48 mx-auto pl-2 rounded-lg text-sm md:text-base lg:text-lg focus-visible:outline-none resize-none"
                 />
                 <input 
                     type="submit" 
-                    value="Send" 
+                    value="Submit"
+                    className="bg-[#0a5e18] w-max mx-auto mt-6 px-3 py-[3px] rounded-lg text-sm md:text-base lg:text-lg cursor-pointer hover:bg-[#085715]" 
                 />
             </form>
         </>

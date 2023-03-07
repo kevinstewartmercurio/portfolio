@@ -6,12 +6,12 @@ import codeReview from "../../public/undraw_code_review.png"
 export function Bio() {
     return (
         <>
-            <div className="bg-[#212f1d] w-full h-max py-8 flex flex-col">
+            <div className="bg-[#212f1d] w-full h-max pt-8 pb-32 flex flex-col">
                 <div className="text-[#cac9c9] h-max pl-4 md:pl-12 lg:pl-20 pr-3 md:pr-10 lg:pr-20 pt-7 pb-4">
                     <h1 className="font-['Poppins'] text-5xl md:text-7xl lg:text-8xl font-bold">
                         about me
                     </h1>
-                    <div className="mt-4 pl-6 md:pl-10 lg:pl-16 font-['Inter'] text-sm md:text-base lg:text-xl font-light">
+                    <div className="mt-6 pl-6 md:pl-10 lg:pl-16 font-['Inter'] text-sm md:text-base lg:text-xl font-light">
                         <p>
                             I recently graduated from Swarthmore College, where
                             I double majored in Mathematics and Computer
