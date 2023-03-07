@@ -7,7 +7,7 @@ export function Bio() {
     return (
         <>
             <div className="bg-[#212f1d] w-full h-max py-8 flex flex-col">
-                <div className="text-[#cac9c9] h-max pl-4  md:pl-12 lg:pl-20 pr-3 md:pr-10 lg:pr-20 pt-7 pb-4">
+                <div className="text-[#cac9c9] h-max pl-4 md:pl-12 lg:pl-20 pr-3 md:pr-10 lg:pr-20 pt-7 pb-4">
                     <h1 className="font-['Poppins'] text-5xl md:text-7xl lg:text-8xl font-bold">
                         about me
                     </h1>
