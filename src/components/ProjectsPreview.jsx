@@ -91,7 +91,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
 export function ProjectsPreview() {
     return (
         <>
-            <div className="h-[1374px] sm:h-[650px] md:h-[686px] xl:h-[724px]">
+            <div className="h-[1374px] xxs:h-[1356px] xs:h-[1382px] sm:h-[642px] md:h-[686px] xl:h-[724px]">
                 <div className="text-[#cac9c9] bg-[#212f1d] w-full h-[192px] xxs:h-[172px] pl-4 md:pl-12 lg:pl-20 pr-3 md:pr-8 lg:pr-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center absolute z-10">
                     <h1 className="w-max font-['Poppins'] text-5xl md:text-7xl lg:text-8xl font-bold">
                         projects

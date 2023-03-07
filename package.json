@@ -8,8 +8,14 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  },
   "dependencies": {
-    "dotenv": "^16.0.3",
+    "@emailjs/browser": "^3.10.0",
+    "emailjs": "^4.0.1",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.3",
     "next": "13.2.3",

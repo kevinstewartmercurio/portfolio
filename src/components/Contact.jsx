@@ -1,6 +1,6 @@
-export function Contact() {
-    console.log("here");
+import { Form } from "@/components/Form"
 
+export function Contact() {
     return (
         <>
             <div className="bg-[#703f01] w-full h-[800px]">
@@ -27,7 +27,7 @@ export function Contact() {
                         </p>
                     </div>
                 </div>
-                
+                <Form />
             </div>
         </>
     )
