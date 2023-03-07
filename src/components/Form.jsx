@@ -62,7 +62,7 @@ export function Form() {
                 <input 
                     type="submit" 
                     value="Submit"
-                    className="bg-[#0a5e18] w-max mx-auto mt-6 px-3 py-[3px] rounded-lg text-sm md:text-base lg:text-lg cursor-pointer hover:bg-[#085715]" 
+                    className="bg-[#0a5e18] w-max mx-auto mt-6 px-3 py-[3px] rounded-lg text-sm md:text-base lg:text-lg cursor-pointer outline-none hover:bg-[#085715]" 
                 />
             </form>
         </>

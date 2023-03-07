@@ -44,7 +44,7 @@ export function Welcome() {
                                 <button
                                     key={idx}
                                     id={el.id}
-                                    className="text-[#cac9c9] bg-[#6b7c66] w-10 h-10 ml-[4%] lg:ml-[1%] border-[1.5px]  border-solid border-[#cac9c9] rounded-full"
+                                    className="text-[#cac9c9] bg-[#6b7c66] w-10 h-10 ml-[4%] lg:ml-[1%] border-[1.5px]  border-solid border-[#cac9c9] rounded-full outline-none"
                                     onClick={() => {
                                         window.open(el.url, "_blank")
                                     }}

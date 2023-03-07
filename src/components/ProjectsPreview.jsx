@@ -37,7 +37,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
                         href={live}
                         target="_blank"
                         rel="noreferrer"
-                        className="live-btn bg-[#688761] border-solid border-2 border-[#ffffff] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light"
+                        className="live-btn bg-[#688761] border-solid border-2 border-[#ffffff] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light outline-none"
                     >
                         view live
                     </Link>
@@ -58,7 +58,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
                         href={repo}
                         target="_blank"
                         rel="noreferrer"
-                        className="repo-btn bg-[#353535] border-solid border-2 border-[#353535] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light"
+                        className="repo-btn bg-[#353535] border-solid border-2 border-[#353535] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light outline-none"
                     >
                         repository
                     </Link>

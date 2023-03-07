@@ -21,7 +21,7 @@ export function Header(props) {
                             <button
                                 key={idx} 
                                 id={el.id}
-                                className="mx-[3.5%] font-['Inter'] text-lg font-light duration-300 hover:text-[#703f01]"
+                                className="mx-[3.5%] font-['Inter'] text-lg font-light outline-none duration-300 hover:text-[#703f01]"
                                 onClick={() => {
                                     props.handleNavClick(el.title)
                                 }}
@@ -34,7 +34,7 @@ export function Header(props) {
                         href="/Kevin_Stewart-Mercurio_Resume.pdf" 
                         target="_blank" 
                         rel="noreferrer"
-                        className="w-max ml-[3.5%] px-[2%] py-[.75%] border-solid border-2 border-[#cac9c9] rounded-lg box-border font-['Inter'] text-lg font-light"
+                        className="w-max ml-[3.5%] px-[2%] py-[.75%] border-solid border-2 border-[#cac9c9] rounded-lg box-border font-['Inter'] text-lg font-light outline-none"
                         id="resume-btn"
                     >
                         resume
