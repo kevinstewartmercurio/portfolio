@@ -8,7 +8,7 @@ export const links = [
     {title: "contact", id: "contact-link", href: "#contact"}
 ]
 
-export function Header() {
+export function Header(props) {
     return (
         <>
             <div className="text-[#cac9c9] bg-[#6b7c66] h-20 flex items-center">
@@ -18,14 +18,16 @@ export function Header() {
                 <div className="w-1/2 px-[3%] flex items-center justify-end">
                     {links.map((el, idx) => {
                         return (
-                            <Link 
-                                href={el.href} 
+                            <button
                                 key={idx} 
-                                className="mx-[3.5%] font-['Inter'] text-lg font-light duration-300 hover:text-[#703f01]"
                                 id={el.id}
+                                className="mx-[3.5%] font-['Inter'] text-lg font-light duration-300 hover:text-[#703f01]"
+                                onClick={() => {
+                                    props.handleNavClick(el.title)
+                                }}
                             >
                                 {el.title}
-                            </Link>
+                            </button>
                         )
                     })}
                     <Link 

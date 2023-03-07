@@ -91,41 +91,43 @@ function ProjectCard({ title, image, desc, live, repo }) {
 export function ProjectsPreview() {
     return (
         <>
-            <div className="text-[#cac9c9] bg-[#212f1d] w-full h-[192px] xxs:h-[172px] pl-4 md:pl-12 lg:pl-20 pr-3 md:pr-8 lg:pr-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center absolute z-10">
-                <h1 className="w-max font-['Poppins'] text-5xl md:text-7xl lg:text-8xl font-bold">
-                    projects
-                </h1>
-                <p className="mt-4 sm:mt-0 pl-6 font-['Inter'] text-sm md:text-base lg:text-xl font-light">
-                    All of my projects can be found on my&nbsp; 
-                    <span>
-                        <Link
-                            href="https://github.com/kstewartmercurio"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-[#965b0f] hover:underline"
-                        >
-                            Github&nbsp;
-                        </Link>
-                    </span> 
-                    but here are 
-                    some of the projects that I've been working on recently.
-                </p>
-            </div>
-            <div className="bg-[url(/waves-haikei.png)] bg-no-repeat w-full h-[128px] mt-[136px] xxs:mt-[116px] xs:mt-[126px] xl:mt-[164px] absolute"></div>
-            <div className="bg-[#703f01] w-full h-max sm:h-[388px] md:h-[432px] mt-[240px] xxs:mt-[220px] xs:mt-[254px] xl:mt-[292px] px-3 pt-6 pb-4 absolute z-10">
-                <div className="h-full flex flex-col sm:flex-row items-center sm:justify-center">
-                    {projects.map((el, idx) => {
-                        return (
-                            <ProjectCard
-                                key={idx}
-                                title={el.title}
-                                image={el.image}
-                                desc={el.desc}
-                                live={el.live || null}
-                                repo={el.repo || null}
-                            />
-                        )
-                    })}
+            <div>
+                <div className="text-[#cac9c9] bg-[#212f1d] w-full h-[192px] xxs:h-[172px] pl-4 md:pl-12 lg:pl-20 pr-3 md:pr-8 lg:pr-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center absolute z-10">
+                    <h1 className="w-max font-['Poppins'] text-5xl md:text-7xl lg:text-8xl font-bold">
+                        projects
+                    </h1>
+                    <p className="mt-4 sm:mt-0 pl-6 font-['Inter'] text-sm md:text-base lg:text-xl font-light">
+                        All of my projects can be found on my&nbsp; 
+                        <span>
+                            <Link
+                                href="https://github.com/kstewartmercurio"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="text-[#965b0f] hover:underline"
+                            >
+                                Github&nbsp;
+                            </Link>
+                        </span> 
+                        but here are 
+                        some of the projects that I've been working on recently.
+                    </p>
+                </div>
+                <div className="bg-[url(/waves-haikei.png)] bg-no-repeat w-full h-[128px] mt-[136px] xxs:mt-[116px] xs:mt-[126px] xl:mt-[164px] absolute"></div>
+                <div className="bg-[#703f01] w-full h-max sm:h-[388px] md:h-[432px] mt-[240px] xxs:mt-[220px] xs:mt-[254px] xl:mt-[292px] px-3 pt-6 pb-4 absolute z-10">
+                    <div className="h-full flex flex-col sm:flex-row items-center sm:justify-center">
+                        {projects.map((el, idx) => {
+                            return (
+                                <ProjectCard
+                                    key={idx}
+                                    title={el.title}
+                                    image={el.image}
+                                    desc={el.desc}
+                                    live={el.live || null}
+                                    repo={el.repo || null}
+                                />
+                            )
+                        })}
+                    </div>
                 </div>
             </div>
         </>
