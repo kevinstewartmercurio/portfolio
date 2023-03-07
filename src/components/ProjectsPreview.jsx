@@ -37,7 +37,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
                         href={live}
                         target="_blank"
                         rel="noreferrer"
-                        className="live-btn bg-[#688761] border-solid border-2 border-[#ffffff] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light outline-none"
+                        className="live-btn bg-[#688761] border-solid border-2 border-[#e8e8e8] rounded-lg mx-1 px-2 py-1 font-['Inter'] text-xs md:text-sm font-light outline-none"
                     >
                         view live
                     </Link>
@@ -69,7 +69,7 @@ function ProjectCard({ title, image, desc, live, repo }) {
 
     return (
         <>
-            <div className="text-[#ffffff] bg-[#688761] max-w-[360px] h-full sm:mx-2 my-2 px-2 pt-1.5 pb-2.5 rounded-xl text-center duration-300 hover:scale-[1.025]">
+            <div className="text-[#e8e8e8] bg-[#688761] max-w-[360px] h-full sm:mx-2 my-2 px-2 pt-1.5 pb-2.5 rounded-xl text-center duration-300 hover:scale-[1.025]">
                 <p className="font-['Poppins'] text-lg md:text-xl">
                     {title}
                 </p>

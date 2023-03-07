@@ -1,17 +1,18 @@
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
-export function Form() {
+export function Form({ handleSubmit }) {
     const form = useRef()
 
     const sendEmail = (e) => {
-        e.preventDefault();
+        e.preventDefault()
 
         emailjs.sendForm(process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, form.current, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY)
             .then(() => {
-                return null
+                form.current.reset()
+                handleSubmit()
             }, (error) => {
-                console.log(error.text)
+                alert(error.text)
             })
     }
 

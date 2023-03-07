@@ -60,7 +60,7 @@ body {
 }
 
 .live-btn {
-    box-shadow: inset 0 0 0 0 #ffffff;
+    box-shadow: inset 0 0 0 0 #e8e8e8;
     -webkit-transition: ease-out 0.45s;
     -moz-transition: ease-out 0.45s;
     transition: 0.45s;
@@ -68,7 +68,7 @@ body {
 
 .live-btn:hover {
     color: #2f3e29;
-    box-shadow: inset 400px 0 0 0 #ffffff;
+    box-shadow: inset 400px 0 0 0 #e8e8e8;
 }
 
 .repo-btn {
