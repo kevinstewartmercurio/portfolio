@@ -1,9 +1,8 @@
-import Link from "next/link"
 import Image from "next/image"
 
 import codeReview from "../../public/undraw_code_review.png"
 
-export function Bio() {
+export function Bio(props) {
     return (
         <>
             <div className="bg-[#212f1d] w-full h-max pt-8 pb-24 flex flex-col">
@@ -22,12 +21,14 @@ export function Bio() {
                             theoretical computer science, systems programming,
                             and software development. I learn fast and I take
                             pride in what I do.&nbsp;
-                            <Link
-                                href="/"
+                            <button
                                 className="text-[#965b0f] hover:underline"
+                                onClick={() => {
+                                    props.handleNavClick("contact")
+                                }}
                             >
                                 Let's get in touch.
-                            </Link>
+                            </button>
                         </p>
                         <p className="mt-5">
                             I enjoy working through hard problems. When I'm not
