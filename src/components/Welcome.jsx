@@ -2,7 +2,7 @@ const buttons = [
     {
         id: "github-btn",
         iconClassName: "fa-brands fa-github text-2xl",
-        url: "https://github.com/kstewartmercurio"
+        url: "https://github.com/kevinstewartmercurio"
     },
     {
         id: "linkedin-btn",
