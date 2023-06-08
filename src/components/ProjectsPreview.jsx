@@ -1,17 +1,23 @@
 import Link from "next/link"
 import Image from "next/image"
 
-import youdosudoku from "../../public/youdosudoku.png"
 import enigmachat from "../../public/enigmachat.png"
 import rpdocs from "../../public/rpdocs.png"
+import friendspsl from "../../public/friendspsl.png"
 
 const projects = [
     {
-        title: "YouDoSudoku",
-        image: youdosudoku,
-        desc: "This was the first project I built after learning HTML, CSS, JavaScript, and React. I made a command line sudoku solver two years ago and I wanted to use it to create a highly customizable sudoku playing experience.",
-        live: "https://youdosudoku.com/",
-        repo: "https://github.com/kstewartmercurio/you-do-sudoku"
+        title: "FriendsPSL",
+        image: friendspsl,
+        desc: "I made this project for the Ultimate Frisbee league that I'm in. It allows you to see when you/your friends will be at the fields together. This site was built using Next.js, TypeScript, and Tailwind.",
+        live: "https://www.friendspsl.com/",
+        repo: "https://github.com/kevinstewartmercurio/friendspsl"
+    },
+    {
+        title: "RP Documentation",
+        image: rpdocs,
+        desc: "This is a freelance project I did. A friend of mine had an app designed for fitness coaches to create and manage diets for clients and I wrote the documentation for that app. This site was built using Next.js, TypeScript, and Tailwind.",
+        repo: "https://github.com/kstewartmercurio/rpdocs"
     },
     {
         title: "enigmachat.io",
@@ -19,12 +25,6 @@ const projects = [
         desc: "This was my first full stack application that I built using the MERN stack. I took a traditional chat application and made it my own by incorporating an old Enigma machine emulator that I had built when I was learning C++.",
         live: "https://www.enigmachat.io/",
         repo: "https://github.com/kstewartmercurio/enigma-chat-io"
-    },
-    {
-        title: "RP Documentation",
-        image: rpdocs,
-        desc: "This is a freelance project I did. A friend of mine had an app designed for fitness coaches to create and manage diets for clients and I wrote the documentation for that app. This site was built using Next.js, TypeScript, and Tailwind.",
-        repo: "https://github.com/kstewartmercurio/rpdocs"
     }
 ]
 
