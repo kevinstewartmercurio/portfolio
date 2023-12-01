@@ -16,7 +16,7 @@ export default function Header() {
     return (
         <>
             <div className="w-full flex justify-center items-center">
-                <div className="w-full max-w-7xl px-12 py-1.5 flex justify-center items-center">
+                <div className="w-full max-w-[1440px] px-12 py-1.5 flex justify-center items-center">
                     <div className="w-full md:w-1/2 flex justify-center md:justify-start items-center">
                         <Link href="/" className="text-primary font-poppins text-3xl xs:text-4xl sm:text-5xl md:text-6xl font-medium hover:text-secondary duration-300">
                             ksm
