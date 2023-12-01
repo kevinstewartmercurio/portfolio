@@ -3,25 +3,115 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --bg: #131313;
+    --primary: #bbbbbb;
+    --secondary: #ededed;
+    --tertiary: #db8e3c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+    overscroll-behavior-y: none;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	background: #131313;
+	overflow-x: hidden;
+}
+
+.gradient-text {
+	background: linear-gradient(180deg, #ffffff, #adadad);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient-text-alt {
+    background: linear-gradient(180deg, #eedec7, #fcb69f);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+#resume-btn {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+    -webkit-transition: ease-out 0.65s;
+    -moz-transition: ease-out 0.65s;
+    transition: 0.65s;
+}
+
+#resume-btn:hover {
+    color: var(--bg);
+    box-shadow: inset 400px 0 0 0 var(--secondary);
+}
+
+#github-btn,
+#linkedin-btn {
+    box-shadow: inset 0 0 0 0 var(--secondary);
+    -webkit-transition: ease-out 0.5s;
+    -moz-transition: ease-out 0.5s;
+    transition: 0.5s;
+}
+
+#github-btn:hover,
+#linkedin-btn:hover {
+	color: var(--bg);
+	box-shadow: inset 0 0 0 60px var(--secondary);
+}
+
+.live-btn {
+	box-shadow: inset 0 0 0 0 var(--secondary);
+    -webkit-transition: ease-out 0.65s;
+    -moz-transition: ease-out 0.65s;
+    transition: 0.65s;
+}
+
+.live-btn:hover {
+	color: var(--tertiary);
+    box-shadow: inset 400px 0 0 0 var(--secondary);
+}
+
+.input-container label {
+    position: absolute;
+    pointer-events: none;
+    transform: translate(17.25px, 9px) scale(1);
+    transform-origin: top left;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+}
+
+.input-container:focus-within label {
+    transform: translate(16.5px, 4px) scale(.55);
+}
+
+.input-container .filled {
+    transform: translate(16.5px, 4px) scale(.55);
+}
+
+@media (min-width: 640px) {
+    .input-container label {
+        transform: translate(17.25px, 10px);
+    }
+
+    .input-container:focus-within label {
+        transform: translate(16.5px, 5px) scale(.55);
+    }
+
+    .input-container .filled {
+        transform: translate(16.5px, 5px) scale(.55);
+    }
+}
+
+@media (min-width: 1024px) {
+	.input-container label {
+        transform: translate(17.25px, 10px);
+    }
+
+    .input-container:focus-within label {
+        transform: translate(16.5px, 4px) scale(.55);
+    }
+
+    .input-container .filled {
+        transform: translate(16.5px, 4px) scale(.55);
+    }
 }
