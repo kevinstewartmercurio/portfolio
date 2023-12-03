@@ -39,7 +39,7 @@ export default function Contact() {
                             <ContactForm setSubmitted={setSubmitted} />
                         ) : (
                             <>
-                                <div className="text-[#5b4c41] bg-[#ececec] rounded-lg px-6 py-4 flex flex-col justify-center items-center font-inter text-sm sm:text-base lg:text-lg text-center">
+                                <div className="text-black bg-[#ececec] rounded-lg px-6 py-4 flex flex-col justify-center items-center font-inter text-sm sm:text-base lg:text-lg text-center">
                                     <div>
                                         Thanks for reaching out!
                                     </div>

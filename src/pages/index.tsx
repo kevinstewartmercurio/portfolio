@@ -13,16 +13,16 @@ export default function Home() {
 			<div>
 				<Header />
 			</div>
-			<div className="py-32 md:pt-48 lg:pt-60">
+			<div className="pt-32 pb-20 lg:pt-48">
 				<CTA />
 			</div>
-			<div className="py-8 md:py-10 lg:py-20">
+			<div className="py-8">
 				<About />
 			</div>
-			<div className="py-8 md:py-10 lg:py-20">
+			<div className="py-8">
 				<Projects />
 			</div>
-			<div className="py-8 md:py-10 lg:pt-20">
+			<div className="py-8">
 				<Contact />
 			</div>
 			<Footer />
