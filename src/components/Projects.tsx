@@ -82,7 +82,7 @@ function ProjectDescription(props: {project: Project}) {
                     </div>
                 </div>
             </div>
-            <div className="text-primary hidden lg:flex justify-center items-center font-inter">
+            <div className="text-primary my-3 hidden lg:flex justify-center items-center font-inter">
                 <Image src={project.img} alt={project.alt} className="rounded-xl max-w-lg xl:max-w-none my-1" />
                 <div className="px-4 xl:px-6 flex flex-col justify-center items-center textsm text-lg">
                     <Link href={project.liveUrl} target="_blank" rel="noreferrer" className="text-secondary font-poppins text-xl underline hover:text-tertiary duration-300">
