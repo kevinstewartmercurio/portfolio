@@ -41,6 +41,11 @@ export default function ContactForm(props: {setSubmitted: Dispatch<SetStateActio
                 .then((res) => {
                     if (res.status === 200) {
                         setSubmitted(true)
+
+                        setName("")
+                        setEmail("")
+                        setSubject("")
+                        setMessage("")
                     } else {
                         setSubmitted(false)
                         console.log("Something went wrong during form submission.")
