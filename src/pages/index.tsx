@@ -16,13 +16,13 @@ export default function Home() {
 			<div className="pt-32 pb-20 lg:pt-48">
 				<CTA />
 			</div>
-			<div className="my-24">
+			<div className="my-32">
 				<About />
 			</div>
-			<div className="my-24">
+			<div className="my-32">
 				<Projects />
 			</div>
-			<div className="my-24">
+			<div className="mt-32">
 				<Contact />
 			</div>
 			<Footer />

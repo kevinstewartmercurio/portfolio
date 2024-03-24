@@ -54,7 +54,7 @@ export default function About() {
                         About Me
                     </div>
                     <div className="text-primary md:mb-3 lg:mb-8 font-inter text-sm sm:text-base lg:text-lg">
-                        I graduated from Swarthmore College, where I double majored in Computer Science and Mathematics. My education has prepared me for industry work by giving me a strong background in theoretical computer science, systems programming, and software development. I learn fast and I take pride in what I do.&nbsp;
+                        I graduated from Swarthmore College, where I double majored in Computer Science and Mathematics. My education gave me a strong background in theoretical computer science, systems programming, and software development. I'm currently working as a software developer at Actual Size, a branding and digital design agency based in Pittsburgh. I learn fast and I take pride in what I do.&nbsp;
                         <button className="text-tertiary hover:underline" onClick={handleGetInTouchClick}>
                             Let&#39;s get in touch
                         </button>
