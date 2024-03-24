@@ -47,15 +47,6 @@ const projects: Project[] = [
         liveUrl: "https://www.friendspsl.com/",
         repoUrl: "https://github.com/kevinstewartmercurio/friendspsl"
     },
-    {
-        title: "enigmachat.io",
-        img: enigmachat,
-        alt: "enigmachat.io",
-        desc: "This was the first fullstack application that I built. I took a traditional chat application and made it my own by incorporating an Enigma machine emulator. In order to read a message you'll need to know the three letters the author used for the encryption.",
-        tools: [MongoDBBadge, ExpressJSBadge, ReactBadge, NodeJSBadge, HerokuBadge],
-        liveUrl: "https://www.enigmachat.io/",
-        repoUrl: "https://github.com/kevinstewartmercurio/enigma-chat-io"
-    },
 ]
 
 function ProjectDescription(props: {project: Project}) {
@@ -131,14 +122,8 @@ export default function Projects() {
                             </div>
                         </div>
                     </div>
-                    <div className="mb-3">
-                        <ProjectDescription project={projects[0]} />
-                    </div>
-                    <div className="my-3">
-                        <ProjectDescription project={projects[1]} />
-                    </div>
-                    <div className="mt-3">
-                        <ProjectDescription project={projects[2]} />
+                    <div className="flex flex-col gap-y-6">
+                        {projects.map((project, idx) => <ProjectDescription key={idx} project={project} />)}
                     </div>
                 </div>
             </div>
