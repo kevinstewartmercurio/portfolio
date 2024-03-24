@@ -16,13 +16,13 @@ export default function Home() {
 			<div className="pt-32 pb-20 lg:pt-48">
 				<CTA />
 			</div>
-			<div className="py-8">
+			<div className="my-24">
 				<About />
 			</div>
-			<div className="py-8">
+			<div className="my-24">
 				<Projects />
 			</div>
-			<div className="py-8">
+			<div className="my-24">
 				<Contact />
 			</div>
 			<Footer />

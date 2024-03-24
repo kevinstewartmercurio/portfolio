@@ -1,6 +1,7 @@
 import { scroller } from "react-scroll"
 
 import {
+    AstroBadge,
     CBadge,
     CPlusPlusBadge,
     CSSBadge,
@@ -24,6 +25,7 @@ const tools: (() => JSX.Element)[] = [
     TypeScriptBadge,
     ReactBadge,
     NextJSBadge,
+    AstroBadge,
     TailwindCSSBadge,
     MongoDBBadge,
     ReduxBadge,
